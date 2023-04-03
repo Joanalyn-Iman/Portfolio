@@ -318,9 +318,9 @@ span {
 }
 .Scontainer1 h2 {
     width: 100%;
-    height: 150px;
     margin: 0;
-    padding-top: 20px;
+    padding: 20px;
+    height: 130px;
     text-align: center;
 }
 .btnPosition {
@@ -329,6 +329,14 @@ span {
     justify-content: center;
     margin-top: -85px;
     width: clamp(400px, calc(25rem + ((1vw - 5.2px) * 21.4286)), 700px);
+}
+.servicebtn {
+    min-width: var(--BtnW);
+    min-height: var(--BtnH);
+    border-radius: var(--btnRad);
+    border: 0;
+    color: var(--SecondaryAccesnt4);
+    background-color: var(--SecondaryAccent5);
 }
 .btnshadow {
     box-shadow: 25px 22px 0px -6px rgba(25,24,37,1);
@@ -349,6 +357,7 @@ span {
     margin: 0;
 }
 .Sbox2 h4 {
+    text-align: center;
     margin: 0;
 }
 .Yrings2 {
@@ -388,6 +397,10 @@ span {
 .hero3bx img{
     width: 100px;
 }
+.heartbeat:hover {
+	-webkit-animation: heartbeat 1.5s ease-in-out both;
+	        animation: heartbeat 1.5s ease-in-out both;
+}
 
 .hero3div {
     width:  auto;
@@ -414,6 +427,8 @@ span {
 }
 .hero4-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: auto;
     width: auto;
 }
@@ -436,7 +451,8 @@ span {
     margin: 0 0 0 20px;
 }
 .hero4-skills-tools-box {
-    padding-top: 60px;
+
+    padding-top: 20px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -519,10 +535,11 @@ span {
     height: 150px;
     background-color: #ffffff;
     margin: 30px 0;
+    padding: 10px 20px 0 20px;
     position: relative;
     z-index: 0;
     overflow: hidden;
-    transition: 0.6s ease-in;
+    transition: 0.7s ease-in;
   }
   
   .card::before {
@@ -641,6 +658,9 @@ span {
     .nav2 {
         display: none;
     }
+    .btnPosition-2 {
+        display: none;
+    }
   }
 
 @media screen and (max-width:1440px) {
@@ -656,7 +676,7 @@ span {
         padding: 30px 10px 0 60px;
     }
     .services {
-        height: 740px;
+        height: 750px;
     }
     .Servicesbox {
         padding:  0 40px 60px 40px;
@@ -689,13 +709,22 @@ span {
         font-size: clamp(1.5rem, -0.7143rem + 3.5714vw, 2.5rem);
     }
     .btnPosition {
-        margin-top: -65px;
+        display: none;
+    }
+    .btnPosition-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px auto;
     }
     .hero4-box{
         width: auto;
     }
     .hero4-container {
         margin-right: 50px;
+    }
+    .hero4-skills-tools-box {
+        text-align: center;
     }
 }
 @media screen and (max-width: 1420px) {
@@ -705,9 +734,6 @@ span {
 }
 
 @media screen and (max-width: 1220px) {
-    .banner1 {
-        margin-left: 80px;
-    }
     .hero4 {
         width: 100%;
         height: auto;
@@ -720,6 +746,7 @@ span {
     .hero4-container {
         margin: 0;
         display: grid;
+        align-items: center;
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);
         transition: .5s ease-in-out;
@@ -730,9 +757,7 @@ span {
     .hero4-box {
         margin: 0 60px;
         padding: 60px 0 60px 0;
-        border: 1px solid red;   
     }
-
 }
 
 
@@ -790,4 +815,55 @@ span {
     .hero3container2 {
         display: none;
     }
+    .hero3div {
+        margin-left: 90px;
+    }
+    .hero3txt{
+        padding-left: 40px;
+    }
+    .Hcontainer {
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+@keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
