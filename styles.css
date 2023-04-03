@@ -662,12 +662,6 @@ span {
     .nav2 {
         display: none;
     }
-    .btnPosition-2 {
-        display: none;
-    }
-    .banner2 {
-        display: none;
-    }
   }
 
 @media screen and (max-width:1440px) {
