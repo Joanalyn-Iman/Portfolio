@@ -337,8 +337,8 @@ span {
     height: var(--Scontainer2H);
     width: var(--Scontainer2W);
     border-radius: 16px;
-    padding: 0px 30px 0 30px;
-    margin-bottom: 33px ;
+    padding: 0 10px;
+    margin-bottom: 33px;
 }
 .Sbox2 {
     height: auto;
@@ -660,7 +660,6 @@ span {
         padding: 30px 10px 0 60px;
     }
     .Servicesbox {
-        border: 1px solid red;
         padding-bottom: 50px;
         display: grid;
         justify-content: center;
@@ -672,15 +671,20 @@ span {
         justify-content: center;
     }
     .Sbox2 {
+        margin-top: 40px;
+        padding: 10px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         padding-top: 40px
     }
     .Scontainer2 {
-        padding: 10px 20px;
-        max-width: 500px;
-        font-size: clamp(1.5rem, -1.8214rem + 5.3571vw, 3rem);;
+        width:clamp(250px, calc(15.625rem + ((1vw - 9.92px) * 37.7155)), 600px);
+        text-align: center;
+        padding: 0;
+    }
+    .Scontainer2 h4{
+        font-size: clamp(1.5rem, -0.7143rem + 3.5714vw, 2.5rem);
     }
 }
 @media screen and (max-width: 992px) {
@@ -718,5 +722,25 @@ span {
     }
     .btnbox button {
         margin-right: 20px;
-    } 
+    }
+    .Servicesbox {
+        margin: 60px auto;
+    }
+    .services {
+        height: 650px;
+    }
+    .Yrings svg, .Yrings2 svg {
+        display: none;
+    }
+}
+@media screen and (max-width: 876px) {
+    .Sbox2 {
+        border: 1px solid red;
+        margin-top: 40px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 40px
+    }
 }
