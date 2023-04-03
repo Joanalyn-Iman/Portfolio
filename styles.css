@@ -421,6 +421,7 @@ span {
 
 .hero4 {
     padding-top: 130px;
+    padding-bottom: 60px;
     height: auto;
     width: 100%;
     background-color: var(--PrimaryAccent2);
@@ -613,13 +614,16 @@ span {
     height: 533px;
     background-color: var(--PrimaryAccent2);
     padding: 20px 120px;
+    border: 1px solid red;
 }
 .hero7-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: auto;
     width: 100%;
     margin-top: 60px;
+
 }
 .hero7-container hr {
     width: 130px;
@@ -659,6 +663,9 @@ span {
         display: none;
     }
     .btnPosition-2 {
+        display: none;
+    }
+    .banner2 {
         display: none;
     }
   }
@@ -730,6 +737,9 @@ span {
 @media screen and (max-width: 1420px) {
     .hero4-box {
         margin-right: 50px;
+    }
+    .hero5container2 {
+        display: none;
     }
 }
 
