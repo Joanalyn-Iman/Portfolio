@@ -758,6 +758,20 @@ span {
         margin: 0 60px;
         padding: 60px 0 60px 0;
     }
+    .hero3div {
+        margin-left: 90px;
+    }
+    .hero3txt{
+        padding-left: 40px;
+    }
+    .Hcontainer {
+        width: 100%;
+        height: auto;
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -814,21 +828,6 @@ span {
     }
     .hero3container2 {
         display: none;
-    }
-    .hero3div {
-        margin-left: 90px;
-    }
-    .hero3txt{
-        padding-left: 40px;
-    }
-    .Hcontainer {
-        width: 100%;
-        height: auto;
-        border: 1px solid red;
-        display: flex;
-
-        justify-content: center;
-        align-items: center;
     }
 }
 
