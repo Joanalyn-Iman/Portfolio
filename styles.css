@@ -590,7 +590,6 @@ span {
     width: 100%;
     height: clamp(300px, calc(18.75rem + ((1vw - 5.2px) * 21.4286)), 600px);
     border-radius: 16px;
-    border: 1px solid red;
  }
 
  .carousel-item img{
@@ -662,6 +661,7 @@ span {
     }
     .Servicesbox {
         border: 1px solid red;
+        padding-bottom: 50px;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);
@@ -676,6 +676,11 @@ span {
         justify-content: space-evenly;
         align-items: center;
         padding-top: 40px
+    }
+    .Scontainer2 {
+        padding: 10px 20px;
+        max-width: 500px;
+        font-size: clamp(1.5rem, -1.8214rem + 5.3571vw, 3rem);;
     }
 }
 @media screen and (max-width: 992px) {
@@ -715,102 +720,3 @@ span {
         margin-right: 20px;
     } 
 }
-/* 
-.hero2 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-}
-.services {
-    border: 1px solid red;
-    width: 100%;
-    height: 700px;
-    background-color: var(--PrimaryAccent1);
-}
-.Servicesbox {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    height: auto;
-    width:100%;
-}
-.Yrings svg {
-    margin: -100px 0 0 80px;
-    width: clamp(100px, calc(6.25rem + ((1vw - 5.2px) * 12.9286)), 281px);
-}
-.rings2 {
-    height: auto;
-    width: 100%;
-    text-align: right;
-    margin-top: 40px;
-}
-.Sbox1 {
-    text-align: center;
-    width: auto;
-    height: auto;
-    margin: 20px 50px 0 150px;
-}
-.Scontainer1 {
-    width: var(--Scontainer1w);
-    height: var(--Scontainer1H);
-    border-radius: 16px;
-    padding: 0px 30px 0 30px;
-    align-items: center;
-}
-.Scolor {
-    background-color: var(--PrimaryAccent2);
-    color: var(--SecondaryAccent1);
-}
-.boxshadow {
-    box-shadow: 25px 25px 0px -6px rgba(25,24,37,1);
-}
-.Scontainer1 p {
-    width: auto;
-    margin: 0;
-    text-align: center;
-    opacity: 90%;
-}
-.Scontainer1 h2 {
-    width: 100%;
-    height: 150px;
-    margin: 0;
-    padding-top: 20px;
-    text-align: center;
-}
-.btnPosition {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -50px; 
-}
-.btnshadow {
-    box-shadow: 25px 22px 0px -6px rgba(25,24,37,1);
-}
-.Scontainer2 {
-    height: var(--Scontainer2H);
-    width: var(--Scontainer2W);
-    border-radius: 16px;
-    padding: 0px 30px 0 30px;
-    margin-bottom: 33px ;
-}
-.Sbox2 {
-    height: auto;
-    width: 40%;
-    border: 1px solid red;
-}
-.Sbox2 h5 {
-    margin: 0;
-}
-.Sbox2 h4 {
-    margin: 0;
-}
-.Yrings2 {
-    margin-right: 50px;
-    margin-top: 35px;
-    text-align: right;
-    width: auto;
-}
-.Yrings2 svg {
-    height: auto;
-    width: clamp(100px, calc(6.25rem + ((1vw - 5.2px) * 12.9286)), 281px);
-} */
