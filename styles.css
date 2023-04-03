@@ -662,6 +662,9 @@ span {
     .nav2 {
         display: none;
     }
+    .btnPosition-2 {
+        display: none;
+    }
   }
 
 @media screen and (max-width:1440px) {
@@ -732,9 +735,7 @@ span {
     .hero4-box {
         margin-right: 50px;
     }
-    .hero5container2 {
-        display: none;
-    }
+
 }
 
 @media screen and (max-width: 1220px) {
