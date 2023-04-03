@@ -408,7 +408,7 @@ span {
 
 .hero4 {
     padding-top: 130px;
-    height: 95vh;
+    height: auto;
     width: 100%;
     background-color: var(--PrimaryAccent2);
 }
@@ -426,7 +426,7 @@ span {
     color: var(--PrimaryAccent1);
 }
 .hero4-box h5 {
-    margin-top: 45px;
+    margin-top: 50px;
 }
 .hero4container {
     padding: 0 0 0 95px;
@@ -691,7 +691,50 @@ span {
     .btnPosition {
         margin-top: -65px;
     }
+    .hero4-box{
+        width: auto;
+    }
+    .hero4-container {
+        margin-right: 50px;
+    }
 }
+@media screen and (max-width: 1420px) {
+    .hero4-box {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .banner1 {
+        margin-left: 80px;
+    }
+    .hero4 {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .hero4-box h1 {
+        line-height: normal;
+    }
+    .hero4-container {
+        margin: 0;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        transition: .5s ease-in-out;
+    }
+    .hero4container {
+        margin: 30px auto;
+    }
+    .hero4-box {
+        margin: 0 60px;
+        padding: 60px 0 60px 0;
+        border: 1px solid red;   
+    }
+
+}
+
 
 @media screen and (max-width: 992px) {
     .nav2 {
