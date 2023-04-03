@@ -275,10 +275,10 @@ span {
     background-color: var(--PrimaryAccent1);
 }
 .Servicesbox {
+    padding:  60px 190px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: center;
     height: auto;
     width:100%;
 }
@@ -294,9 +294,7 @@ span {
 }
 .Sbox1 {
     text-align: center;
-    width: auto;
     height: auto;
-    margin: 20px 50px 0 150px;
 }
 .Scontainer1 {
     width: var(--Scontainer1w);
@@ -327,8 +325,10 @@ span {
 }
 .btnPosition {
     display: flex;
-    justify-content: end;
-    margin-top: -50px; 
+    align-items: center;
+    justify-content: center;
+    margin-top: -85px;
+    width: clamp(400px, calc(25rem + ((1vw - 5.2px) * 21.4286)), 700px);
 }
 .btnshadow {
     box-shadow: 25px 22px 0px -6px rgba(25,24,37,1);
@@ -341,6 +341,7 @@ span {
     margin-bottom: 33px;
 }
 .Sbox2 {
+    margin-left: 150px;
     height: auto;
     width: 100%;
 }
@@ -374,7 +375,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 .Hero3container h3 {
@@ -382,7 +383,6 @@ span {
     width: fit-content;
 }
 .hero3bx {
-    margin-right: 10px;
     height: auto;
 }
 .hero3bx img{
@@ -404,11 +404,6 @@ span {
 }
 .btnmargin {
     margin: 30px 0 60px 150px;
-}
-
-.hero3container2 {
-    height: auto;
-    width: 100%;
 }
 
 .hero4 {
@@ -647,6 +642,7 @@ span {
         display: none;
     }
   }
+
 @media screen and (max-width:1440px) {
     .nav1 img {
         margin-left: 50px;
@@ -659,8 +655,12 @@ span {
     .banner1 {
         padding: 30px 10px 0 60px;
     }
+    .services {
+        height: 740px;
+    }
     .Servicesbox {
-        padding-bottom: 50px;
+        padding:  0 40px 60px 40px;
+        margin-top: 10px;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);
@@ -669,9 +669,11 @@ span {
     .Sbox1 {
         display: grid;
         justify-content: center;
+
     }
     .Sbox2 {
-        margin-top: 40px;
+        margin-left: 0;
+        margin-top: 20px;
         padding: 10px;
         display: flex;
         justify-content: space-evenly;
@@ -679,14 +681,18 @@ span {
         padding-top: 40px
     }
     .Scontainer2 {
+        margin-left: 20px;
         width:clamp(250px, calc(15.625rem + ((1vw - 9.92px) * 37.7155)), 600px);
         text-align: center;
-        padding: 0;
     }
     .Scontainer2 h4{
         font-size: clamp(1.5rem, -0.7143rem + 3.5714vw, 2.5rem);
     }
+    .btnPosition {
+        margin-top: -65px;
+    }
 }
+
 @media screen and (max-width: 992px) {
     .nav2 {
         display: block;
@@ -704,7 +710,7 @@ span {
         justify-content: center;
         transition: .5s ease-in-out;
     }
-    .banner1 {
+    .banner1{
         padding: 30px 20px 0 80px;
     }
     .banner2 {
@@ -724,23 +730,21 @@ span {
         margin-right: 20px;
     }
     .Servicesbox {
-        margin: 60px auto;
+        margin: 60px 0;
     }
     .services {
         height: 650px;
     }
+    .Scontainer1 h2{
+        height: auto;
+    }
     .Yrings svg, .Yrings2 svg {
         display: none;
     }
-}
-@media screen and (max-width: 876px) {
-    .Sbox2 {
-        border: 1px solid red;
-        margin-top: 40px;
-        padding: 10px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding-top: 40px
+    .Hero3container h3 {
+        margin-left: 80px;
+    }
+    .hero3container2 {
+        display: none;
     }
 }
