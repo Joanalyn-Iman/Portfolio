@@ -731,7 +731,10 @@ span {
         text-align: center;
     }
 }
-@media screen and (max-width: 1420px) {
+@media (min-width: 1024) and (max-width: 1420px) {
+    .banner1 {
+        padding: 30px 10px 0 80px;
+    }
     .hero4-box {
         margin-right: 50px;
     }
@@ -739,6 +742,10 @@ span {
 }
 
 @media screen and (max-width: 1220px) {
+    .banner2 , .banner1{
+        border: 1px solid red;
+        width: 100%;
+    }
     .hero4 {
         width: 100%;
         height: auto;
