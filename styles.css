@@ -169,9 +169,9 @@ button {
 }
 .btnbox {
     height: auto;
-    width: 422px;
+    width: 380px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .navbarmenu {
     display: flex;
@@ -204,7 +204,9 @@ button {
 .offcanvas-end {
     background-color: var(--SecondaryAccent3);
 }
-
+* {
+    border: 1px solid red;
+}
 .hero1 {
     position: relative;
     height: auto;
@@ -239,7 +241,7 @@ hr {
 .banner1 h1 {
     color: var(--SecondaryAccent1);
     line-height: 88%;
-    width: 619px;
+    width: fit-content;
 }
 span {
     color: var(--PrimaryAccent1);
@@ -247,8 +249,8 @@ span {
 .banner1 p {
     opacity: 80%;
     text-align: left;
-    width: auto;
-    margin-left: 90px;
+    width:80%;
+    margin-left: 60px;
 }
 .banner2 {
     width: 100%;
@@ -664,6 +666,16 @@ span {
     .btnPosition-2 {
         display: none;
     }
+
+    .hero1-container{
+        border: 1px solid red;
+    }
+    .banner1 {
+        border: 1px solid pink;
+    }
+    .banner2 {
+        border: 1px solid blue;
+    }
   }
 
 @media screen and (max-width:1440px) {
@@ -676,7 +688,13 @@ span {
         transition: 0.5s;
     }
     .banner1 {
-        padding: 30px 10px 0 60px;
+    padding: 10px 10px 0 80px;
+    }
+    .banner1 p {
+        padding: 20px 0 0 10px;
+    }
+    .LP2 {
+        margin-left: 180px;
     }
     .services {
         height: 750px;
@@ -731,9 +749,6 @@ span {
     }
 }
 @media (min-width: 1024) and (max-width: 1420px) {
-    .banner1 {
-        padding: 30px 10px 0 80px;
-    }
     .hero4-box {
         margin-right: 50px;
     }
@@ -741,9 +756,6 @@ span {
 }
 
 @media screen and (max-width: 1220px) {
-    .banner2 , .banner1{
-        width: 100%;
-    }
     .hero4 {
         width: 100%;
         height: auto;
