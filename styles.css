@@ -259,7 +259,7 @@ span {
     align-items: center;
 }
 .banner2 img {
-    width: clamp(400px, calc(25rem + ((1vw - 5.2px) * 24.9286)), 749px);
+    width: clamp(250px, calc(15.625rem + ((1vw - 3.2px) * 30.8025)), 749px);
     height: auto;
 }
 
