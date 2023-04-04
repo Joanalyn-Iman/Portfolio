@@ -322,7 +322,6 @@ span {
     text-align: center;
 }
 .btnPosition {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,14 +341,12 @@ span {
     box-shadow: 25px 22px 0px -6px rgba(25,24,37,1);
 }
 .Scontainer2 {
-    border: 1px solid red;
     height: var(--Scontainer2H);
     width: var(--Scontainer2W);
     border-radius: 16px;
     margin-bottom: 33px;
 }
 .Sbox2 {
-    border: 1px solid red;
     margin-left: 150px;
     height: auto;
     width: 100%;
@@ -362,7 +359,6 @@ span {
     margin: 0;
 }
 .Yrings2 {
-    border: 1px solid red;
     padding-right: 50px;
     text-align: right;
     width: 100%;
@@ -884,4 +880,4 @@ span {
               animation-timing-function: ease-out;
     }
   }
-  
+}
