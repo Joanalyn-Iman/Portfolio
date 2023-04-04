@@ -614,7 +614,7 @@ span {
     height: 533px;
     background-color: var(--PrimaryAccent2);
     padding: 20px 120px;
-    border: 1px solid red;
+
 }
 .hero7-container {
     display: flex;
@@ -743,7 +743,6 @@ span {
 
 @media screen and (max-width: 1220px) {
     .banner2 , .banner1{
-        border: 1px solid red;
         width: 100%;
     }
     .hero4 {
@@ -779,7 +778,6 @@ span {
     .Hcontainer {
         width: 100%;
         height: auto;
-        border: 1px solid red;
         display: flex;
         justify-content: center;
         align-items: center;
