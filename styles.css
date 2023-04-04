@@ -269,7 +269,7 @@ span {
 }
 .services {
     width: 100%;
-    height: 750px;
+    height: 790px;
     background-color: var(--PrimaryAccent1);
 }
 .Servicesbox {
@@ -326,6 +326,7 @@ span {
     align-items: center;
     justify-content: center;
     margin-top: -85px;
+    padding-bottom: 60px;
     width: clamp(400px, calc(25rem + ((1vw - 5.2px) * 21.4286)), 700px);
 }
 .servicebtn {
@@ -343,7 +344,6 @@ span {
     height: var(--Scontainer2H);
     width: var(--Scontainer2W);
     border-radius: 16px;
-    padding: 0 10px;
     margin-bottom: 33px;
 }
 .Sbox2 {
@@ -664,17 +664,6 @@ span {
         display: none;
     }
 
-    .hero1-container{
-        border: 1px solid red;
-    }
-    .banner1 {
-        border: 1px solid pink;
-    }
-    .banner2 {
-        border: 1px solid blue;
-    }
-  }
-
 @media screen and (max-width:1790px) {
     .Servicesbox {
         padding: 60px 80px;
@@ -704,11 +693,10 @@ span {
         margin-left: 180px;
     }
     .services {
-        height: 750px;
+        height: 780px;
     }
     .Servicesbox {
         padding:  0 40px 60px 40px;
-        margin-top: 10px;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);
@@ -743,7 +731,7 @@ span {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px auto;
+        padding-bottom: 60px;
     }
     .hero4-box{
         width: auto;
@@ -840,7 +828,7 @@ span {
         margin-right: 20px;
     }
     .Servicesbox {
-        margin: 60px 0;
+        margin: 60px 0
     }
     .services {
         height: 650px;
