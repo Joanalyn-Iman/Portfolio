@@ -204,9 +204,6 @@ button {
 .offcanvas-end {
     background-color: var(--SecondaryAccent3);
 }
-* {
-    border: 1px solid red;
-}
 .hero1 {
     position: relative;
     height: auto;
@@ -677,6 +674,16 @@ span {
         border: 1px solid blue;
     }
   }
+
+@media screen and (max-width:1790px) {
+    .Servicesbox {
+        padding: 60px 80px;
+    }
+    .Sbox2 {
+        margin: 0;
+        padding: 0 90;
+    }
+}
 
 @media screen and (max-width:1440px) {
     .nav1 img {
