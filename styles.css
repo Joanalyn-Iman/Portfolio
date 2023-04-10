@@ -494,9 +494,10 @@ span {
 }
 .hero5 {
     margin-top: 60px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    justify-content: center;
     height: auto;
     width:  100%;
 }
@@ -741,7 +742,6 @@ span {
     .hero4-box {
         margin-right: 50px;
     }
-
 }
 
 @media screen and (max-width: 1220px) {
@@ -784,6 +784,25 @@ span {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .hero5 {
+        margin: 0;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        transition: .5s ease-in-out;
+    }
+    .card {
+        width: 650px;
+        height: 150px;
+    }
+    .card:hover::before{
+        transition-delay:0.2s ;
+        transform: scale(60);
+    }
+
+}
 
 @media screen and (max-width: 992px) {
     .nav2 {
