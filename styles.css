@@ -1,7 +1,7 @@
 
 
 * {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -419,11 +419,12 @@ span {
     background-color: var(--PrimaryAccent2);
 }
 .hero4-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    height: auto;
-    width: auto;
+    justify-content: center;
+    /* height: auto;
+    width: auto; */
 }
 .hero4-box {
     margin: 0 93px 0 93px;
@@ -667,6 +668,12 @@ span {
         margin: 0;
         padding: 0 90;
     }
+}
+@media screen and (max-width:1510px) {
+    .hero4-box {
+        margin: 0 30px;
+    }
+    
 }
 
 @media screen and (max-width:1440px) {
