@@ -1,7 +1,7 @@
 
 
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -208,6 +208,7 @@ button {
     position: relative;
     height: auto;
     width: 100%;
+    padding-top: 80px;
 }
 hr {
     border: 0;
