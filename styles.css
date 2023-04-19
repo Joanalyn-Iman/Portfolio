@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
     /* border: 1px solid red; */
@@ -22,7 +22,7 @@
     /************Radius***************/
     --btnRad: 16px;
     /************Fonts***************/
-    --font1: 'Playfair Display';
+    --font1: 'Poppins';
     --font2: 'Georgia';
     --font3: 'Lato';
     --font4: 'Germania One';
@@ -60,31 +60,27 @@ footer {
 }
 h1,h2,h3,h4 h5{
     font-weight: 700;
+    font-family: var(--font1);
 }
 
 h1 {
     font-size: var(--h1);
-    font-family: var(--font1);
     padding-top: 30px;
 }
 
 h2 {
     font-size:var(--h2);
-    font-family: var(--font2);
   }
 h3 {
-    font-family: var(--font2);
     font-weight: 700;
     font-size: var(--h3);
 }
 
 h4 {
-    font-family: var(--font2);
     font-weight: 700;
     font-size: var(--h4);
 }
 h5 {
-    font-family: var(--font2);
     font-weight: 700;
     font-size: var(--h5);
 }
@@ -133,7 +129,7 @@ button {
     padding: auto 20px;
     font-weight: 700;
     font-size: var(--btnf);
-    font-family: 'Georgia';
+    font-family: var(--font1);
 }
 
 .mainbtn1 a {
@@ -247,6 +243,7 @@ hr {
     margin: 20px 0 40px 500px;
 }
 .hero1-container {
+    padding-top: 60px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -279,8 +276,8 @@ span {
     align-items: center;
 }
 .banner2 img {
-    width: clamp(250px, calc(15.625rem + ((1vw - 3.2px) * 30.8025)), 749px);
-    height: auto;
+    width: clamp(250px, calc(15.625rem + ((1vw - 3.2px) * 30.8025)), 749px); 
+    height: 800px;
 }
 
 .hero2 {
@@ -488,8 +485,11 @@ span {
     justify-content: space-around;
     align-items: center;
 }
-.hero4-tools  {
+.hero4-tools {
     margin-top: 30px;
+}
+.hero4-tools img {
+    color: var(--SecondaryAccent1);
 }
 .hero4lines {
     width: 550px;
@@ -637,10 +637,9 @@ span {
     background-color:var(--SecondaryAccesnt4);
     color: var(--SecondaryAccesnt4);
 }
-
 .hero7 {
     width: 100%;
-    height: 533px;
+    height: auto;
     background-color: var(--PrimaryAccent2);
     padding: 20px 120px;
 
@@ -788,6 +787,12 @@ span {
     .hero4-skills-tools-box {
         text-align: center;
     }
+
+    .hero7-container{
+        display: flex;
+    }
+
+
 }
 @media (min-width: 1024) and (max-width: 1420px) {
     .hero4-box {
