@@ -30,34 +30,28 @@
     </header>
 
     <section class="Contactform" id="Contact-2"> 
-        <div class="container">
-            <div class="container-info">
-            </div>
-            <div class="container-form">
-                <div>
-                    <h3>
-                        Have a question? <br> Contact me!
-                    </h3>
-                    <ul class="info">
-                        <li>
-                            <span> <img src="./AssetsJ/contact-icon 1.svg" alt=""> +639977522193</span>
-                        </li>
-                        <li><span><img src="./AssetsJ/email-round-icon 1.svg" alt="">joana716@gmail.com</span></li>
-                    </ul>
-                </div>
+        <div class="contact-container">
+            <div class="contact-content1">
 
-                <div class="follow-me-img-1">
-                    <p>Follow me:</p>
-                    <img src="./AssetsJ/facebook.png" alt="">
-                    <img src="./AssetsJ/behance (2).png" alt="">
+                <div class="C-container">
+                    <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."> 
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
+            
+            <div class="contact-content2"></div>
         </div>
     </section>
-    
-
-       
-    </div>
 
     <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./apps.js"></script>
