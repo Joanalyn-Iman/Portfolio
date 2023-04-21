@@ -270,3 +270,60 @@ button {
     background: var(--SecondaryAccesnt4);
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25s);
 }
+
+.container-form h3 {
+    text-align: center;
+    color: var(--SecondaryAccent1);
+}
+
+.container .container-form ul.info {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.container .container-form ul.info li {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.container .container-form ul.info li span:nth-child(1) {
+    width: 45px;
+    min-width: 30px;
+}
+
+.container .container-form ul.info li span:nth-child(1) img {
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+.container-form img {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.follow-me p {
+    text-align: center;
+    height: auto;
+}  
+
+.follow-me-img-1{
+    width: 300px;
+    height: 60px;
+    display: flex;
+}
+.follow-me-img img{
+    height: 60px;
+    width: 40px;
+}
+
+
+.footer {
+    border-top: 1px solid var(--SecondaryAccent1);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 70%;
+}
