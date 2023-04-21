@@ -534,7 +534,7 @@ span {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 .hero5container img {
     width: clamp(400px, calc(25rem + ((1vw - 5.2px) * 24.9286)), 749px);
@@ -547,7 +547,16 @@ span {
     align-items: center;
     text-align: center;
 }
+
+.hero5-btn {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 .row {
+    padding-top: 60px;
+    width: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -600,11 +609,8 @@ span {
     border: 1px solid var(--PrimaryAccent1);
     padding: 60px 0;
 }
-.row {
-    padding: 60px 0 0 120px;
-}
 .row h1 {
-
+    padding-left: 123px;
     width: fit-content;
     display: flex;
     text-align: center;
@@ -660,28 +666,43 @@ span {
 }
 
 .follow-me {
+  
     margin-top: 60px;
-    padding: 0 120px;
+    padding: 0 60px;
     width: 100%;
     height: 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.hero7-img {
+.follow-me-content {
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}
+.follow-me p {
+    text-align: center;
+    height: auto;
+}
+.follow-me-items {
+    display: flex;
+    height: 62px;
+    width: 100%;
+    
+}
+.follow-me-img {
+    width: 500px;
+    display: flex;
+    justify-content: end;
+}
+.follow-me-img img{
+    margin: 0 10px;
     height: 40px;
     width: 40px;
 }
-.hero7-img img{
-    margin: 0 10px;
-    height: 100%;
-    width: 100%;
-}
-.follow-me p {
-    margin: 20px 0;
-    height: auto;
-}
+
 
 .footer {
     border-top: 1px solid var(--SecondaryAccent1);
@@ -962,3 +983,6 @@ span {
     }
   }
 }
+
+
+/* Contact */
