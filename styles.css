@@ -41,8 +41,8 @@
     --Scontainer1w: clamp(400px, calc(25rem + ((1vw - 5.2px) * 21.4286)), 700px);
     --Scontainer2H: clamp(70px, calc(4.375rem + ((1vw - 5.2px) * 5.7143)), 150px);
     --Scontainer2W: clamp(300px, calc(18.75rem + ((1vw - 5.2px) * 17.5)), 545px);
-    --carousel-radius: 16px
-}
+    --carousel-radius: 16px;
+    --ContactW: clamp(340px, calc(21.25rem + ((1vw - 5.2px) * 7.8571)), 500px);
 
 body {
     box-sizing: border-box;

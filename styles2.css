@@ -31,7 +31,7 @@
      --h5: clamp(32px, calc(2rem + ((1vw - 5.2px) * 0.5714)), 40px);
      --ptxt: clamp(16px, calc(1rem + ((1vw - 5.2px) * 0.5714)), 24px);
      --footer-fontsize: clamp(12px, calc(0.75rem + ((1vw - 5.2px) * 0.2857)), 16px);
-
+     --ContactW: clamp(340px, calc(21.25rem + ((1vw - 5.2px) * 7.8571)), 500px);
      
 }
 
@@ -217,13 +217,11 @@ button {
 
 .Contactform{
     padding: 60px 123px;
-    border: 1px solid red;
     width: 100%;
     height: auto;
 }
 
 .contact-container {
-    border: 1px solid green;
     width: 100%;
     height: auto;
 }   
@@ -231,12 +229,11 @@ button {
 .contact-content1 {
     width: 100%;
     height: auto;
-    border: 1px solid red;
     padding: 120px 0; 
 }
 
 .C-container {
-    width: 500px;
+    width: var(--ContactW);
     height: auto;
     padding: 60px;
     border-radius: 16px ;
@@ -250,6 +247,26 @@ button {
     font-weight: 500; 
 }
 
+.C-container ::placeholder{ 
+    color: var(--SecondaryAccent1);
+    opacity: 40%;
+    font-size: 30px;
+}
+
+.mainbtn2 {
+    background: transparent;
+    min-width: var(--BtnW);
+    min-height: var(--BtnH);
+    border: 2px solid var(--PrimaryAccent1);
+    border-radius: var(--btnRad);
+    color: var(--PrimaryAccent1);
+}
+
+.btn-hover1:active {
+    background-color: var(--SecondaryAccent5);
+    box-shadow:  0 6px  rgba(25,24,37,1);
+    transform: translateY(4px);
+}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -263,16 +280,15 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
+    background-color: var(--PrimaryAccent2);
+    color: var(--SecondaryAccent1);
     padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+    border-radius: 16px;
     cursor: pointer;
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--SecondaryAccent5);
   }
   
   .container {
