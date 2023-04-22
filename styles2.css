@@ -31,7 +31,7 @@
      --h5: clamp(32px, calc(2rem + ((1vw - 5.2px) * 0.5714)), 40px);
      --ptxt: clamp(16px, calc(1rem + ((1vw - 5.2px) * 0.5714)), 24px);
      --footer-fontsize: clamp(12px, calc(0.75rem + ((1vw - 5.2px) * 0.2857)), 16px);
-     --ContactW: clamp(340px, calc(21.25rem + ((1vw - 5.2px) * 7.8571)), 500px);
+     --ContactW: clamp(340px, calc(21.25rem + ((1vw - 5.2px) * 7.8571)), 600px);
      
 }
 
@@ -215,44 +215,6 @@ button {
     background-color: var(--SecondaryAccent3);
 }
 
-.Contactform{
-    padding: 60px 123px;
-    width: 100%;
-    height: auto;
-}
-
-.contact-container {
-    width: 100%;
-    height: auto;
-}   
-
-.contact-content1 {
-    width: 100%;
-    height: auto;
-    padding: 120px 0; 
-}
-
-.C-container {
-    width: var(--ContactW);
-    height: auto;
-    padding: 60px;
-    border-radius: 16px ;
-    background-color: var(--PrimaryAccent1);
-}
-
-.C-container, input label {
-    font-family: 'Poppins', sans-serif;
-    font-size: 36px;  
-    color: var(--SecondaryAccesnt4);
-    font-weight: 500; 
-}
-
-.C-container ::placeholder{ 
-    color: var(--SecondaryAccent1);
-    opacity: 40%;
-    font-size: 30px;
-}
-
 .mainbtn2 {
     background: transparent;
     min-width: var(--BtnW);
@@ -268,32 +230,83 @@ button {
     transform: translateY(4px);
 }
 
-input[type=text], select, textarea {
+.Contactform{
+    padding: 60px 123px;
+    width: 100%;
+    height: auto;
+}
+
+.contact-container {
+    width: 100%;
+    height: auto;
+}   
+
+.contact-content1 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 120px 0; 
+}
+
+.C-container {
+    width: var(--ContactW);
+    height: auto;
+    padding: 60px;
+    border-radius: 16px ;
+    background-color: var(--PrimaryAccent1);
+}
+
+.C-container, input label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;  
+    color: var(--SecondaryAccesnt4);
+    font-weight: 500; 
+}
+
+.C-container ::placeholder{ 
+    color: var(--SecondaryAccent1);
+    opacity: 40%;
+    font-size: 16px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=text],select, textarea {
+    font-size: 16px;
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 16px;
+    border-radius: 8px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: var(--PrimaryAccent2);
     color: var(--SecondaryAccent1);
+    margin-top: 12px;
     padding: 12px 20px;
     border-radius: 16px;
     cursor: pointer;
-  }
+}
   
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: var(--SecondaryAccent5);
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+}
 
+.contact-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+  
+.contact-content2 {
+    width: 100%;
+    height: auto;
+}
