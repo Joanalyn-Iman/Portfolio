@@ -243,6 +243,8 @@ button {
 
 .contact-content1 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     padding: 120px 0; 
@@ -254,6 +256,7 @@ button {
     padding: 60px;
     border-radius: 16px ;
     background-color: var(--PrimaryAccent1);
+    z-index: 20 ;
 }
 
 .C-container, input label {
@@ -307,6 +310,63 @@ input[type=submit]:hover {
 }
   
 .contact-content2 {
-    width: 100%;
-    height: auto;
+    text-align: left;
+    margin-left: -60px;
+    padding: 50px 150px;
+    width: 850px;
+    height: 480px;
+    background-color: var(--SecondaryAccent3);
+}
+
+.C-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact-img {
+    display: flex;
+    width: 400px;
+    align-items: center;
+}
+
+.contact-img img{
+    margin-right: 20px;
+    height: 40px;
+}
+
+.follow-me {
+    margin-top: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.follow-me p {
+    margin: 0;
+    margin-right: 10px;
+}
+.follow-me img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.contact-circle1 {
+    background-color: var(--PrimaryAccent2);
+    width: 150px;
+    height: 150px;
+    margin-top: -60px;
+    margin-left: 239px;
+    border-radius: 0% 16px 0% 100%;
+}
+
+.contact-circle2{
+    background-color: var(--PrimaryAccent3);
+    width: 112px;
+    height: 112px;
+    margin-left: -60px;
+    margin-bottom: -60px;
+    border-radius: 0% 100% 0% 16px;
 }
