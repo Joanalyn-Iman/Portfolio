@@ -109,6 +109,7 @@ header {
     text-align: center;
     height: auto;
     width: 100%;
+    box-shadow: 0px 11px 11px -6px rgba(93, 93, 93, 0.55);
   }
 .nav1 img {
     margin-left: 120px;
@@ -374,4 +375,35 @@ input[type=submit]:hover {
     margin-left: -60px;
     margin-bottom: -60px;
     border-radius: 0% 100% 0% 16px;
+}
+
+
+
+/* Media Queries */
+@media screen and (max-width:1920px) {
+    .nav2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav2 {
+        display: block;
+        transition: 0.75s;
+    }
+    .nav1 {
+        display: none;
+        transition: 0.75s;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .nav1 img {
+        margin-left: 50px;
+        transition: 0.75s;
+    }
+    .navbarbtn {
+        margin-right: 50px;
+        transition: 0.5s;
+    }
 }
