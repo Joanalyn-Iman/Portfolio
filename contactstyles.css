@@ -21,6 +21,9 @@
     --font3: 'Lato';
     --font4: 'Germania One';
 
+    /************Radius***************/
+    --btnRad: 16px;
+
      /************FontSize***************/
      --btnf: clamp(16px, calc(1rem + ((1vw - 7.68px) * 0.6944)), 24px);
      --regularfontsize: 16px;
@@ -92,7 +95,7 @@ header {
     position: fixed;
     height: 150px;
     width: 100%;
-    z-index: 12;
+    z-index: 2000;
 }
 .nav1 {
     background-color: var(--SecondaryAccent3);
@@ -106,7 +109,6 @@ header {
     text-align: center;
     height: auto;
     width: 100%;
-    z-index: 2;
   }
 .nav1 img {
     margin-left: 120px;
@@ -251,12 +253,14 @@ button {
 }
 
 .C-container {
+    z-index: 7;
     width: var(--ContactW);
     height: auto;
     padding: 60px;
     border-radius: 16px ;
     background-color: var(--PrimaryAccent1);
     z-index: 20 ;
+    box-shadow: -1px 1px 29px 2px rgba(107, 103, 103, 0.7);
 }
 
 .C-container, input label {
@@ -310,6 +314,7 @@ input[type=submit]:hover {
 }
   
 .contact-content2 {
+    box-shadow: -1px 1px 29px 2px rgba(107, 103, 103, 0.7);
     text-align: left;
     margin-left: -60px;
     padding: 50px 150px;
