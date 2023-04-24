@@ -220,14 +220,15 @@ button {
 
 
 .AboutMe-2 {
+    display: flex;
     padding: 60px 123px;
     width: 100%;
     height: 100vh;
 }
-.AboutMe-container {
+.AboutMe-container  {
     margin-top: 180px;
     margin-left: -180px;
-    width: 700px;
+    width: 1200px;
     height: 600px;
     background: var(--PrimaryAccent1);
     border-radius: 16px ;
@@ -237,24 +238,55 @@ button {
 }
 
 .AboutMe-Box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     Width: 390px;
     Height: 490px;
     border-radius: 16px;
     margin-right: -170px;
+    padding: 40px;
     background: var(--SecondaryAccent3);
     box-shadow: -1px 1px 29px 2px rgba(107, 103, 103, 0.7);
+    text-align: center;
 }
 
+.AboutMe-Box-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+}
 .AboutMe-Box img {
-    width: 302px;
-    height: 302px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
     border-radius: 100%;
 }
 
+.AboutMe-Box-icons {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
 
+.AboutMe-Box-icons img {
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+
+}
+
+.AboutMe-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 200px 60px 250px ;
+    text-align: left;
+    margin-top: 180px;
+    width: 100%;
+    height: 600px;
+    border: 1px solid red;
+}
 
 
 
