@@ -384,6 +384,9 @@ input[type=submit]:hover {
     .nav2 {
         display: none;
     }
+    .navbarbtn {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 992px) {
