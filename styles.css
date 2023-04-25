@@ -31,7 +31,7 @@
     --btnf: clamp(16px, calc(1rem + ((1vw - 7.68px) * 0.6944)), 24px);
     --regularfontsize: 16px;
     --h1: clamp(48px, calc(3rem + ((1vw - 5.2px) * 5.7143)), 128px);
-    --h2: clamp(60px, calc(3.75rem + ((1vw - 5.2px) * 2.5714)), 96px);
+    --h2: clamp(48px, calc(3.75rem + ((1vw - 5.2px) * 2.5714)), 96px);
     --h3: clamp(48px, calc(3rem + ((1vw - 5.2px) * 0.8571)), 60px);
     --h4: clamp(28px, calc(1.75rem + ((1vw - 5.2px) * 1.4286)), 48px);
     --h5: clamp(32px, calc(2rem + ((1vw - 5.2px) * 0.5714)), 40px);
@@ -541,7 +541,7 @@ span {
     height: auto;
 }
 .hero5container img {
-    width: clamp(400px, calc(25rem + ((1vw - 5.2px) * 24.9286)), 749px);
+    width: clamp(calc(25rem + ((1vw - 5.2px) * 24.9286)), 749px);
     height: auto;
 }
 .hero5container2{
@@ -720,7 +720,7 @@ span {
     .nav2 {
         display: none;
     }
-    .btnPosition-2 {
+    .btnPosition {
         display: none;
     }
 
@@ -796,11 +796,16 @@ span {
     .Scontainer2 h4{
         font-size: clamp(1.5rem, -0.7143rem + 3.5714vw, 2.5rem);
     }
-    .btnPosition-2 {
+
+    .servicebtn-1 {
+        display: none;
+    }
+    .btnPosition{
+        border:1px solid red;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-bottom: 60px;
     }
     .hero4-box{
         width: auto;
