@@ -90,7 +90,7 @@ p {
     font-family: 'Lato', sans-serif;
     font-size: var(--ptxt);
     color: var(--SecondaryAccent1);
-    opacity: 80%;
+    opacity: 90%;
     padding: 0;
 }
 a {
@@ -99,7 +99,7 @@ a {
 
 header {
     position: fixed;
-    height: 150px;
+    height: 120px;
     width: 100%;
     z-index: 12;
 }
@@ -120,6 +120,7 @@ header {
   }
 .nav1 img {
     margin-left: 120px;
+    height: 80px;
 }
 .nav2 {
     width: 100%;
@@ -795,9 +796,6 @@ span {
     .Scontainer2 h4{
         font-size: clamp(1.5rem, -0.7143rem + 3.5714vw, 2.5rem);
     }
-    .btnPosition {
-        display: none;
-    }
     .btnPosition-2 {
         display: flex;
         align-items: center;
@@ -817,8 +815,6 @@ span {
     .hero7-container{
         display: flex;
     }
-
-
 }
 @media (min-width: 1024) and (max-width: 1420px) {
     .hero4-box {
@@ -931,11 +927,14 @@ span {
     .btnbox button {
         margin-right: 20px;
     }
+    .btnPosition-2 {
+        display: block;
+    }
     .Servicesbox {
         margin: 60px 0
     }
     .services {
-        height: 650px;
+        height: 750px;
     }
     .Scontainer1 h2{
         height: auto;
@@ -950,6 +949,6 @@ span {
         display: none;
     }
 }
-
-
 }
+
+/*  */
