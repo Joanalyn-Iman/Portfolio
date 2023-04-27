@@ -364,6 +364,7 @@ span {
     border-radius: 16px;
     margin-bottom: 60px;
 }
+
 .Sbox2 {
     margin-left: 150px;
     height: auto;
@@ -532,16 +533,18 @@ span {
     height: auto;
     width:  100%;
 }
+
 .hero5container {
-    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width:  100%;
     height: auto;
+
 }
+
 .hero5container img {
-    width: clamp(calc(25rem + ((1vw - 5.2px) * 24.9286)), 749px);
+    width:100%;
     height: auto;
 }
 .hero5container2{
@@ -663,7 +666,17 @@ span {
     height: auto;
     width: 100%;
     margin-top: 60px;
+}
 
+.heor7-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero7-hr {
+    width: 100%;
 }
 .hero7-container hr {
     width: 130px;
@@ -773,10 +786,6 @@ span {
         margin-left: 180px;
     }
 
-    .hero7-container img {
-        display: block;
-    }
-
     .services {
         height: 900px;
     }
@@ -832,6 +841,13 @@ span {
     .hero7-container{
         display: flex;
     }
+
+    .heor7-box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
 }
 @media (min-width: 1024) and (max-width: 1420px) {
     .hero4-box {
@@ -845,16 +861,41 @@ span {
     }
 }
 
-@media screen and (max-width: 1363px) {
+@media screen and (max-width: 1363px){
+    .hero3container2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1280px) {
     .hero7-container {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    
+    .hero7-container h3 {
+       margin-bottom: 40px;
+    }
+    
+    .hero7-container hr {
+        margin: auto;
     }
 
-    .hero3container2 {
-        display: none;
+    .hero7-container ,p ,img {
+        margin-top: 40px;
     }
+    .follow-me {
+        padding: 0;
+    }
+    .follow-me p  {
+        margin: auto;
+    }
+
+    .follow-me-img {
+        width: 250px; 
+
 }
 
 @media screen and (max-width: 1220px) {
@@ -984,6 +1025,20 @@ span {
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    .hero4-skills-tools-box {
+        display: block;
+    }
+    .row {
+        display: block;
+    }
+    .card {
+        margin: auto;
+    }
+
+    
+}
 
 @media screen and (max-width: 520px) {
     .Sbox2 {
