@@ -439,13 +439,15 @@ span {
 .btnmargin {
     margin: 20px 0 100px 150px;
 }
-
 .hero4 {
-    padding-top: 130px;
-    padding-bottom: 160px;
+    padding: 130px 123px 160px 123px;
     height: auto;
     width: 100%;
     background-color: var(--PrimaryAccent2);
+}
+
+.Hcontainer {
+    padding-left: 40px;
 }
 
 .hero4-container {
@@ -454,11 +456,10 @@ span {
     align-items: center;
     justify-content: center;
 }
-.hero4-box {
-    margin: 0 93px 0 93px;
+/* .hero4-box {
     width: auto;
     height: auto;
-}
+} */
 .hero4-box h1{
     color: var(--PrimaryAccent1);
     margin-bottom: 30px;
@@ -491,11 +492,17 @@ span {
     justify-content: space-around;
     align-items: center;
 }
+
+.hero4-tools .tools-box {
+    margin: 0;
+    padding: 0;
+}
 .hero4-tools {
     margin-top: 30px;
 }
 .hero4-tools img {
     color: var(--SecondaryAccent1);
+    margin-top: 0;
 }
 .hero4lines {
     width: 550px;
@@ -517,6 +524,11 @@ span {
 .hero4-experience-box {
     padding-right: 30px;
     height: 556px;
+}
+
+
+.hero4-box h5{
+    margin: 40px 0;
 }
 .hero4btn {
     width: 100%;
@@ -767,6 +779,12 @@ span {
         margin: 0 30px;
     }
 }
+@media screen and (max-width:1510px) {
+    .hero4-box {
+        margin: 0 93px;
+    }
+}
+
 
 @media screen and (max-width:1440px) {
     .nav1 img {
@@ -899,6 +917,22 @@ span {
     }
 }
 
+@media screen and (max-width: 1471px ){
+    .follow-me {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1369px ) {
+    .hero4-box h1 {
+        color: var(--PrimaryAccent1);
+        margin-bottom: 30px;
+        padding-left: 93px;
+    }
+}
+
+
+
+
 @media screen and (max-width: 1220px) {
     .hero4 {
         width: 100%;
@@ -1025,7 +1059,7 @@ span {
     .hero3container2 {
         display: none;
     }
-}
+} 
 
 
 @media screen and (max-width: 768px) {
@@ -1039,7 +1073,12 @@ span {
         margin: auto;
     }
 
-    
+}
+
+@media screen and (max-width: 720px) {
+    .hero4container {
+        margin: 30px auto;
+    }
 }
 
 
@@ -1098,5 +1137,23 @@ span {
     .row {
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .hero5-btn {
+        margin-bottom: 60px;
+    }
+
+    .hero7 {
+        padding: 20px 60px;
+    }
+
+    .follow-me-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .follow-me p {
+        margin: 0;
     }
 }
