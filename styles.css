@@ -736,6 +736,7 @@ span {
     .btnPosition {
         display: none;
     }
+}
 
 
 @media screen and (max-width:1790px) {
@@ -895,7 +896,7 @@ span {
 
     .follow-me-img {
         width: 250px; 
-
+    }
 }
 
 @media screen and (max-width: 1220px) {
@@ -945,6 +946,7 @@ span {
 @media screen and (max-width: 1108px) {
     .Yrings svg {
     margin: -67px 0 0 80px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .hero5 {
@@ -1040,6 +1042,7 @@ span {
     
 }
 
+
 @media screen and (max-width: 520px) {
     .Sbox2 {
         display: grid;
@@ -1096,6 +1099,4 @@ span {
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-}
-}
 }
